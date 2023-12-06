@@ -1,4 +1,12 @@
 # OpenVINS
+You do not needed to build if your computer cannot successfully compile.
+
+Just compile these two files. One is for single, another is for multi-input.
+
+'''
+g++ -I/usr/include/eigen3 FD_Evaluation.cpp -I/usr/include/python3.8 -lpython3.8
+g++ -I/usr/include/eigen3 FD_Evaluation_comparison.cpp -I/usr/include/python3.8 -lpython3.8 -o comparison -lboost_filesystem -lboost_system
+'''
 
 [![ROS 1 Workflow](https://github.com/rpng/open_vins/actions/workflows/build_ros1.yml/badge.svg)](https://github.com/rpng/open_vins/actions/workflows/build_ros1.yml)
 [![ROS 2 Workflow](https://github.com/rpng/open_vins/actions/workflows/build_ros2.yml/badge.svg)](https://github.com/rpng/open_vins/actions/workflows/build_ros2.yml)
